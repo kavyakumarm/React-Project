@@ -1,0 +1,39 @@
+{
+  "name": "react-project",
+  "version": "1.0.0",
+  "description": "React-Project",
+  "keywords": [],
+  "homepage": "https://github.com/kavyakumarm/React-Project#readme",
+  "bugs": {
+    "url": "https://github.com/kavyakumarm/React-Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavyakumarm/React-Project.git"
+  },
+  "license": "ISC",
+  "author": "Kavya",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "parcel": "parcel index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "parcel": "^2.16.4",
+    "vite": "^8.0.13"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "browserslist": [
+    "last 2 Chrome version",
+    "last 2 Safari version",
+    "last 2 Firefox version",
+    "last 2 Edge version"
+  ]
+}
