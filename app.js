@@ -1,20 +1,36 @@
 import * as React from "react";
-import { createRoot } from "react-dom/client";
-const heading = React.createElement("h1", {
-   id: "heading"
-}, "Hello From React!");
-const root = createRoot(document.getElementById("root"));
+import ReactDOM from "react-dom/client";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  [
-    React.createElement("h1", { id: "child", key: "c1" }, "Namaste React"),
-    React.createElement("h2", { id: "child2", key: "c2" }, "Namaste React 2"),
-    React.createElement("h3", { id: "child3", key: "c3" }, "Namaste React 3"),
-  ]
-);
+//React element
+const reactElement = <span>Composite Component</span>;
+// root.render(ReactElement);
 
-root.render(parent);
+const Title = () =>{
+  return (
+    <h1 className="heading">
+      {reactElement}
+      Namaste from Title component🚀
+    </h1>
+  )
+}
 
 
+
+const SpanElement = <span>From span element</span>;
+//JSX Functional Component
+// const HeaderElelment = () => (
+//   <div id="container">
+//   <Title/>
+//    <h1 className="">Namaste from JSX element🚀</h1>;
+//    </div>
+// );
+
+const HeaderElelment = () => (
+    <div id="container">
+
+    <Title/>
+        <h1 className="">Namaste from JSX element🚀</h1>
+  </div>
+)
+root.render(<HeaderElelment/>);
