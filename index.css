@@ -1,7 +1,45 @@
-.heading{
-    background-color: #9c2c2c;
-    padding: 20px;
-    text-align: center;
-    color: white;
+.header{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    border:.5px solid black !important;
 }
 
+.logo{
+    width:100px;
+}
+.nav-items{
+    font-size: 20px;
+    padding:0px 20px;
+}
+
+.nav-items> ul {
+    display:flex;
+    list-style-type: none;
+}
+
+.nav-items > ul> li {
+ padding : 10px;
+ margin: 10px;
+}
+.resto-cardContainer{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    flex-wrap:wrap;
+}
+.restocard{
+    width: 180px;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightblue; ;
+}
+.restocard:hover{
+    background-color: #9da989;
+    border:1px solid rgb(106, 103, 103);
+    border-radius: 5px;
+}
+
+.resto-image{
+    width: 100%;
+}
